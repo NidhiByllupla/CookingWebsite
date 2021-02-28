@@ -1,0 +1,184 @@
+<html>
+<head>
+<style>
+body{
+background-color:black;
+color:white;
+font-size: 40px;
+}
+#div1{
+    background-color:green;
+    color:white;
+    font-size:40px;
+}
+li{
+    display: inline;
+}
+a{
+    color:deeppink;
+}
+a:hover{
+    background-color:pink;
+    color:black;
+    font-size:50px;
+}
+ul{
+    background-color:white;
+}
+#div2{
+    background-color:white;
+    font-size:40px;
+}
+#container{
+    height: 300px;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    background-color:pink;
+}
+.special{
+    height: 300px;
+    width: 400px;
+    text-align:center;
+}
+#container{
+    height: 300px;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    background-color:pink;
+    color:black;
+}
+.special{
+    height: 300px;
+    width: 400px;
+    text-align:center;
+}
+#div3{
+    background-color:white;
+    color:black;
+    font-size:30px;
+}
+#div4{
+    background-color:rgb(50, 151, 197);
+    color:white;
+    font-size: 35px;
+}
+#div5{
+    background-color:rgb(228, 58, 149);
+    color:white;
+    font-size:40px;
+}
+</style>
+</head>
+</html>
+</head>
+<body>
+<div id="div1">
+    <p style="font-family: 'Bradley Hand ITC';">Nidhi's Food Forever</p>
+</div><hr>
+<div id="div2"><hr>
+
+<ul style="list-style-type:none;">
+<li>
+<a href="AboutUs.html">About Us</a>
+</li>
+<li>
+<a href="ContactUs.html">Contact Us</a>
+</li>
+<a href="OrderHere.html">Order Here</a>
+</li>
+<a href="Prices.html">Prices</a>
+</li>
+<a href="CookingClasses.html">Cooking Classes</a>
+</li>
+<a href="Suggestions.html">Suggestions</a>
+</li>
+</ul>
+</div><hr>
+
+<section id="container">
+    <p><b><i>Main Meals:<br>Vegetable Soup<br>Pasta<br>Egg Omelete</i></b></p>
+    <div class="special">
+        <img src="soupz.jpg" height="300 width="300" usemap="#soup">
+        <map name="soup">
+        <area shape="circle" coords="8,9,247,157" href="soupzrecipe.html">
+        </map>
+    </div>
+    <div class="special">
+        <img src="pasta.jpg" usemap="#pasta">
+        <map name="pasta">
+        <area shape="circle" coords="8,9,247,157" href="pastarecipe.html">
+        </map>
+    </div>
+    <div class="special">
+        <img src="omelete.jpg" height="200" width="300" usemap="#omelete">
+        <map name="omelete">
+        <area shape="circle" coords="8,9,247,157" href="omelete.html">
+        </map>
+    </div>
+    </section><hr>
+    <section id="container">
+        <p><b><i>Desserts:<br>Cupcakes<br>Ice-cream<br>Cookies</i></b></p>
+        <div class="special">
+        <img src="cupcakes.jpg" usemap="#cup">
+        <map name="cup">
+        <area shape="rect" coords="0,0,194,296" href="cupcakesrecipe.html">
+        </map>
+        </div>
+        <div class="special">
+        <img src="icecream.jpg" height="200" width="300" usemap="#ice">
+        <map name="ice">
+        <area shape="rect" coords="0,0,282,156" href="icecreamrecipe.html">
+        </map>
+        </div>
+        <div class="special">
+        <img src="cookie.jpg" height="200" width="200" usemap="#cook">
+        <map name="cook">
+        <area shape="rect" coords="0,0,297,296" href="cookierecipe.html">
+        </map>
+        </div>
+        </div>
+        </section><hr>
+        <div id="div3">
+        <h1>Place Your Order!</h1>
+        <form method="POST">
+            <label for="FName">First Name:</label>
+            <input type="text" name="FName" required size="40"><br/>
+            <label for="LName">Last Name:</label>
+            <input type="text" name="LName"><br>
+            <label for="EMAIL">Email: </label>
+    <input type="email" name="EMAIL" required><br/>
+    <label for="mob">Phone Number: </label>
+    <input type="number" name="mob"><br/>
+    <label for="hobby">Order: </label><br/>
+    <input type="checkbox" name="hobby"> Vegetable Soup - $10.00<br/>
+    <input type="checkbox" name="hobby"> Pasta - $15.00<br/>
+    <input type="checkbox" name="hobby"> Omelete - $8.00<br/>
+    <input type="checkbox" name="hobby"> Cupcakes - $20.00<br/>
+    <input type="checkbox" name="hobby"> Icecream - $18.00<br/>
+    <input type="checkbox" name="hobby"> Cookies - $10.00<br/>
+    <label for="hobby">Delivery/Pickup </label><br/>
+    <input type="checkbox" name="hobby"> Delivery<br/>
+    <input type="checkbox" name="hobby"> Pickup<br/>
+    <label for="Total">Total:</label>
+            <input type="text" name="Total" required size="40"><br/>
+            <input type="submit" value="Place Order">
+    <input type="reset" value="clear">
+    </div><hr>
+    <div id="div4">
+    <h1>Cooking Classes</h1>
+   <p style="font-family: 'Comic Sans MS';">Do you want to learn how to make these delicious meals?<br> Well then sign up for Nidhi's Forever Food cooking classes!<br>Please click on Cooking Classes at the top for more information.</p>
+    </div><hr>
+    <div id="div5">
+    <p><b><i>Complains/Suggestions</i></b></p>
+    <form method="POST">
+<textarea name="com" rows="10" cols="40">
+</textarea><br/>
+<input type="submit" value="Submit">
+<input type="reset" value="clear">
+</form>
+</div>
+<p style="font-family: 'Century Gothic';">Website Made By: Nidhi Byllupla</p>
+</body>
+</html>
